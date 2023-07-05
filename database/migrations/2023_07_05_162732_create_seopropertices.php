@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('seopropertices', function (Blueprint $table) {
             $table->id();
+            $table->string('pageName');
+            $table->string('title');
+            $table->string('keywords');
+            $table->string('description');
+            $table->string('ogSiteName');
+            $table->string('ogUrl');
+            $table->string('ogTitle');
+            $table->string('ogDescription');
+            $table->string('ogImage');
             $table->timestamps();
         });
     }

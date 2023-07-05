@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('experience', function (Blueprint $table) {
             $table->id();
             $table->string('duration');
-            $table->string('institutionName');
-            $table->string('field');
-            $table->test('details');
+            $table->string('title');
+            $table->string('designation');
+            $table->text('details');
             $table->timestamps();
         });
     }

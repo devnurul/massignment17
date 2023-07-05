@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('resume', function (Blueprint $table) {
             $table->id();
+            $table->string('downloadLink');
             $table->timestamps();
         });
     }

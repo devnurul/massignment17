@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('heropropertices', function (Blueprint $table) {
             $table->id();
+            $table->string('keyLine');
+            $table->string('title');
+            $table->string('shortTitle');
+            $table->string('img');
             $table->timestamps();
         });
     }

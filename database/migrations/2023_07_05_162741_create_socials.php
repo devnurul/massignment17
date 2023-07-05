@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('socials', function (Blueprint $table) {
             $table->id();
+            $table->string('twitterLink');
+            $table->string('githubLink');
+            $table->string('linkedinLink');
             $table->timestamps();
         });
     }
