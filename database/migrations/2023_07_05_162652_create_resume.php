@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('resume', function (Blueprint $table) {
             $table->id();
             $table->string('downloadLink');
-            $table->timestamps();
+            
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

@@ -22,7 +22,9 @@ return new class extends Migration
             $table->string('ogTitle');
             $table->string('ogDescription');
             $table->string('ogImage');
-            $table->timestamps();
+            
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

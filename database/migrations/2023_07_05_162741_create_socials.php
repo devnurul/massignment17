@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('twitterLink');
             $table->string('githubLink');
             $table->string('linkedinLink');
-            $table->timestamps();
+            
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
