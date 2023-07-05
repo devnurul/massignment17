@@ -3,19 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     function page(Request $request){
-    
+        return view('pages.home');
     }
-    function heroRequest(Request $request){
-    
+    function herodata(Request $request){
+        return DB::table('heropropertices')->first();
     }
-    function aboutRequest(Request $request){
-    
+    function aboutdata(Request $request){
+        return DB::table('abouts')->first();
     }
-    function socialRequest(Request $request){
-    
+    function socialdata(Request $request){
+        return DB::table('socials')->first();
     }
 }
