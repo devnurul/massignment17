@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
+    // function pagesss(Request $request){
+    //     return view('pages.app');
+    // }
     function page(Request $request){
         return view('pages.home');
     }

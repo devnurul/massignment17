@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 //page route
 
 Route::get('/',[HomeController::class, 'page']);
+//Route::get('/',[HomeController::class, 'pagesss']);
+
 Route::post('/contact',[ContactController::class, 'page']);
 Route::get('/resume',[ResumeController::class, 'page']);
 Route::get('/projects',[ProjectController::class, 'page']);
