@@ -1,4 +1,5 @@
-<section>
+
+<div class="container px-5 my-5"><section>
     <!-- Skillset Card-->
     <div class="card shadow border-0 rounded-4 mb-5">
         <div class="card-body p-5">
@@ -39,3 +40,4 @@
         </div>
     </div>
 </section>
+</div>

@@ -1,0 +1,1 @@
+<?php /**PATH G:\laragon\www\massignment17\resources\views/components/language.blade.php ENDPATH**/ ?>

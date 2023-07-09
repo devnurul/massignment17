@@ -1,4 +1,5 @@
-<section>
+
+<div class="container px-5 my-5"><section>
     <h2 class="text-secondary fw-bolder mb-4">Education</h2>
     <!-- Education Card 1-->
 
@@ -54,3 +55,4 @@
     </div>
 
 </section>
+</div><?php /**PATH G:\laragon\www\massignment17\resources\views/components/education.blade.php ENDPATH**/ ?>

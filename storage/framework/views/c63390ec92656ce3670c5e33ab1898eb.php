@@ -1,3 +1,4 @@
+<div class="container px-5 my-5">
 <section>
     <div class="d-flex align-items-center justify-content-between mb-4">
         <h2 class="text-primary fw-bolder mb-0">Experience</h2>
@@ -50,3 +51,4 @@
     </div>
 
 </section>
+</div><?php /**PATH G:\laragon\www\massignment17\resources\views/components/experiences.blade.php ENDPATH**/ ?>
