@@ -14,7 +14,7 @@
                     <form id="contactForm">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="     " type="text"
+                            <input class="form-control" id="name" type="text"
                                 placeholder="Enter your name..." />
                             <label for="name">Full name</label>
                         </div>
@@ -60,4 +60,4 @@
 
 
     })
-</script>
+</script><?php /**PATH G:\laragon\www\massignment17\resources\views/components/cfForm.blade.php ENDPATH**/ ?>

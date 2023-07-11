@@ -17,6 +17,7 @@
         <main class="flex-shrink-0">
 
             @include('components.nav')
+            @include('components.loader')
 
             <!-- Header-->
             @yield('content') 

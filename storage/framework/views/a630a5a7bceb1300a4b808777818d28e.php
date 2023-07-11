@@ -17,6 +17,7 @@
         <main class="flex-shrink-0">
 
             <?php echo $__env->make('components.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            <?php echo $__env->make('components.loader', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
             <!-- Header-->
             <?php echo $__env->yieldContent('content'); ?> 

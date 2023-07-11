@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class, 'page']);
 //Route::get('/',[HomeController::class, 'pagesss']);
 
-Route::post('/contact',[ContactController::class, 'page']);
+Route::get('/contact',[ContactController::class, 'page']);
 Route::get('/resume',[ResumeController::class, 'page']);
 Route::get('/projects',[ProjectController::class, 'page']);
 
