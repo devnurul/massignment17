@@ -21,7 +21,16 @@
 
 
         try{
+
+            //preloader
+            document.getElementById('loading-div').classList.remove('d-none');
+            document.getElementById('content-div').classList.add('d-none');
+
+
             const response = await axios.get(URL);
+
+            document.getElementById('loading-div').classList.add('d-none');
+            document.getElementById('content-div').classList.remove('d-none');
 
             response.data.forEach((item) => {
                 document.getElementById('projectList').innerHTML+=(
@@ -42,7 +51,7 @@
                 )
             });
         }catch(error){
-            console.log('error')
+            alert(error)
         }
 
         
