@@ -3,18 +3,35 @@
         <div class="row gx-5 justify-content-center">
             <div class="col-xxl-8">
                 <div class="text-center my-5">
-                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                    <p class="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline" ">About Me</span></h2>
+                    <p class="lead fw-light mb-4" id="title">My name is Start Bootstrap and I help brands grow.</p>
+                    <p class="text-muted" id="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
                         dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque
                         officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
-                    <div class="d-flex justify-content-center fs-2 gap-4">
-                        <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                        <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                        <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
-                    </div>
+                    <?php echo $__env->make('components.socialdata', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 </div>
             </div>
         </div>
     </div>
-</section><?php /**PATH G:\laragon\www\massignment17\resources\views/components/about.blade.php ENDPATH**/ ?>
+</section>
+
+<script>
+    aboutData();
+    async function aboutData(){
+        let URL = '/aboutdata';
+
+
+        try {
+            let response = await axios.get(URL);
+
+            
+                document.getElementById('title').innerHTML= response.data.title;
+                document.getElementById('details').innerHTML= response.data.details;
+                
+            
+
+        } catch (error) {
+            alert(error)
+        }
+    }
+</script><?php /**PATH G:\laragon\www\massignment17\resources\views/components/about.blade.php ENDPATH**/ ?>

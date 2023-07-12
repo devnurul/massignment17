@@ -7,11 +7,10 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    // function pagesss(Request $request){
-    //     return view('pages.app');
-    // }
+    
     function page(Request $request){
-        return view('pages.home');
+        $seo = DB::table('seopropertices')->where('pageName', '=' , 'Home')->first();
+        return view('pages.home', ['seo' =>$seo]);
     }
     function herodata(Request $request){
         return DB::table('heropropertices')->first();

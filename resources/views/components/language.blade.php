@@ -18,7 +18,15 @@
         let URL = '/languagesdata';
 
         try {
-            let response = await axios.get(URL);
+                //preloader
+            document.getElementById('loading-div').classList.remove('d-none');
+            document.getElementById('content-div').classList.add('d-none');
+
+
+            const response = await axios.get(URL);
+
+            document.getElementById('loading-div').classList.add('d-none');
+            document.getElementById('content-div').classList.remove('d-none');
 
             response.data.forEach((item) => {
                 document.getElementById('languageData').innerHTML += (
